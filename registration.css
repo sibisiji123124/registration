@@ -1,0 +1,106 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a11cb,#2575fc,#00c9ff);
+}
+
+/* Form Container */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Form Card */
+.form-box{
+    width:400px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:35px;
+    color:white;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+.form-box h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.form-box p{
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+/* Inputs */
+input,
+select{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:14px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:#ff9800;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#ff5722;
+    transform:scale(1.05);
+}
+
+/* Login Text */
+.login{
+    margin-top:20px;
+}
+
+.login a{
+    color:#ffe082;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+@media(max-width:500px){
+    .form-box{
+        width:90%;
+        padding:25px;
+    }
+
+    .form-box h1{
+        font-size:28px;
+    }
+}
